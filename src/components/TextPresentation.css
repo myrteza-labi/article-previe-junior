@@ -14,9 +14,10 @@
 
 .textPresentationPragraph {
     font-size: 13px; 
-    font-weight: 500; 
+    font-weight: 300; 
     line-height: 20px; 
     letter-spacing: 0.12px; 
     margin-top: 10px; 
     color: #6E8098; 
+    margin-bottom: 20px; 
 }

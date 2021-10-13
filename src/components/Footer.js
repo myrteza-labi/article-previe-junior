@@ -23,7 +23,7 @@ class Footer extends React.Component{
 
                 {this.state.className == "Footer active"
                 ?
-                <div className="mainFooterContainer">
+                <div className="mainFooterContainer mainFooterContainerActive">
                     <p className="shareWord" >SHARE</p>
                         {this.props.icon}
                         
@@ -35,8 +35,8 @@ class Footer extends React.Component{
                     
                 </div>
                 :   
-                <div className="mainFooterContainer">
-                    <img src={this.props.profilePictureSrc} />
+                <div className="mainFooterContainer mainFooterContainerStatic">
+                    <img className="profilePicture" src={this.props.profilePictureSrc} />
                     <div className="nameAndDateContainer" >
                         <p className="name">{this.props.name}</p>
                         <p className="date" >{this.props.date}</p>
