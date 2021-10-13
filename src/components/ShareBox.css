@@ -14,3 +14,21 @@
     letter-spacing: 5px; 
     color: #9DAEC2; 
 }
+
+@media screen and (min-width: 1440px){
+    .ShareBox{
+        position: absolute; 
+    }
+    .ShareBoxDesktopActive{
+        width: 250px; 
+        height: 50px; 
+        justify-content: space-between; 
+        border-radius: 10px; 
+        background-color: #48556A; 
+        align-items: center; 
+        padding-left: 30px; 
+        padding-right: 30px; 
+        top: -90px; 
+        right: -80px; 
+    }
+}

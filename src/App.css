@@ -17,5 +17,7 @@
 @media screen and (min-width: 1440px){
     .textAndFooterContainer{
         width: 100%; 
+        padding-left: 30px; 
+        padding-right: 20px; 
     }
 }

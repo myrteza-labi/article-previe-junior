@@ -6,10 +6,14 @@
     justify-content: center; 
     align-items: center; 
 }
+.shareBtnContainer:hover {
+    cursor: pointer; 
+}
 .shareBtn{
     width: 14px; 
     height: 12px; 
 }
+
 /*  static style  */
 .shareBtnContainerStatic{
     background-color: #ECF2F8; 

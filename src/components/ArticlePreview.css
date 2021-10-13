@@ -17,5 +17,6 @@
         width: 730px; 
         height: 280px; 
         flex-direction: row; 
+        overflow: visible; 
     }
 }

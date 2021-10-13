@@ -17,7 +17,7 @@ class Footer extends React.Component{
         super(props); 
         this.state = {
             renderedFooter: "",
-            className: "Footer footerMobileStatic",
+            className: "Footer footerDesktopActive",
             windowWidth: window.innerWidth,
         }
     }
@@ -26,9 +26,6 @@ class Footer extends React.Component{
 
 
     render(){
-
-        
-
         let renderedFooter; 
 
         let mobileFooterStatic = 
@@ -41,63 +38,67 @@ class Footer extends React.Component{
 
                 <ShareBtn   src={shareBtnStatic} 
                             ContainerClassName={"shareBtnContainer shareBtnContainerStatic"} 
-                            shareBtnClassName={"shareBtn shareBtnStatic"}/>
+                            shareBtnClassName={"shareBtn shareBtnMobileStatic"}/>
         </div>
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
         let mobileFooterActive = 
             <div className="footerMainContainer footerMainContainerActive">
-                <ShareBox   className="ShareBoxMobile" 
+                <ShareBox   className="ShareBox ShareBoxMobile" 
                             shareWord={"SHARE"} />
 
                 <ShareBtn   ContainerClassName={"shareBtnContainer shareBtnContainerActive"}
-                            shareBtnClassName={"shareBtn shareBtnActive"}
+                            shareBtnClassName={"shareBtn shareBtnMobileActive"}
                             src={shareBtnActive}/>
             </div>
 
 
 
-        /*
-        <div className="mainFooterContainer mainFooterContainerStatic">
-            <img className="profilePicture" src={this.props.profilePictureSrc} />
-            <div className="nameAndDateContainer" >
-                <p className="name">{this.props.name}</p>
-                <p className="date" >{this.props.date}</p>
-            </div>
-            <div className="shareContainer shareContainerStatic " >
-                <img src={shareIcon} 
-                     alt={"une fleche indiquant le partage vers d'autre plateforme"} 
-                     className="shareIcon"/> 
-            </div>;
-        </div>*/
 
-        /*
-        
-        */
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        let desktopFooterActive= 
+        <div className="footerMainContainer footerMainContainerDesktopActive">
+            <ProfileBox srcProfilePicture={profilepicture} 
+                            altProfilePicture={"Michelle Appleton"}
+                            name={"Michelle Appleton"}
+                            date={"28 juin 2020"}/>
+
+            <ShareBtn   ContainerClassName={"shareBtnContainer shareBtnContainerActive"}
+                        shareBtnClassName={"shareBtn shareBtnDesktopActive"}
+                        src={shareBtnActive}/>
+
+            <ShareBox   className="ShareBox ShareBoxDesktopActive" 
+                        shareWord={"SHARE"} />
+
+            
+        </div>
             
 
         return(
             <section id="Footer" className={this.state.className} >
-                {mobileFooterStatic}
+                {desktopFooterActive}
             </section>
         )
     }
