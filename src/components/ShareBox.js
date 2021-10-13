@@ -6,6 +6,9 @@ function ShareBox(props){
         <div className={"ShareBox "+props.className}>
             <p className="shareWord" >{props.shareWord}</p>
             <IconContainer/>
+            <div className="downTriangleContainer">
+                <div className="downTriangle" ></div>
+            </div>
         </div>
     )
 }

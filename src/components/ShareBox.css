@@ -31,4 +31,18 @@
         top: -90px; 
         right: -80px; 
     }
+    .downTriangleContainer{
+        position: relative; 
+        left: -52%; 
+        bottom: -50%; 
+        background-color: red; 
+    }
+    .downTriangle{
+        position: absolute; 
+        width: 0;
+        height: 0;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-top: 10px solid #48556A;
+    }
 }

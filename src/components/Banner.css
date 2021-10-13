@@ -15,5 +15,6 @@
         max-width: 285px; 
         max-height: 280px; 
         background-position: 0 0 ; 
+        border-radius: 10px 0 0 10px; 
     }
 }
