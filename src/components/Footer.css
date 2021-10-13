@@ -1,14 +1,27 @@
 .Footer {
-    display: flex; 
-    flex-direction: row; 
+    width: 100%; 
+    height: 64px; 
+    margin-top: 20px; 
 }
 
 .shareIcon {
-    background-image: url("../images/icon-share.svg"); 
+    width: 14px; 
+    height: 12px; 
+}
+.shareContainer {
     width: 32px; 
     height: 32px; 
-    background-size: contain; 
-    background-repeat: no-repeat; 
+    border-radius: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.shareContaineractive{
+    background-color: #6E8098; 
+}
+.shareContainerStatic{
+    background-color: #ECF2F8; 
 }
 .active {    
     background-color: #48556A; 
@@ -16,5 +29,18 @@
 
 .mainFooterContainer {
     display: flex; 
-    flex-direction: column; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px 35px 20px 35px; 
+    width: 100%; 
+    height: 100%; 
+}
+
+.shareWord {
+    font-size: 13px; 
+    font-weight: 300; 
+    line-height: 20px; 
+    letter-spacing: 5px; 
+    color: #9DAEC2; 
 }
