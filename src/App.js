@@ -7,7 +7,11 @@ import TextPresentation from './components/TextPresentation';
 function App() {
   return (
     <div className="App">
-
+      <ArticlePreview>
+        <Banner/>
+        <TextPresentation/>
+        <Footer/>
+      </ArticlePreview>
     </div>
   );
 }

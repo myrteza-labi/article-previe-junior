@@ -2,7 +2,7 @@ import './Icon.css';
 
 function Icon(props){
     return(
-        <div className="Icon" ></div>
+        <img src={props.src} alt={props.alt} className="icon" />
     )
 }
 

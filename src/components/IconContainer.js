@@ -2,7 +2,9 @@ import './IconContainer.css';
 
 function IconContainer(props){
     return(
-        <div className="IconContainer" ></div>
+        <div className="IconContainer" >
+            {props.children}
+        </div>
     )
 }
 

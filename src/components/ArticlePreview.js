@@ -2,7 +2,9 @@ import './ArticlePreview.css';
 
 function ArticlePreview(props){
     return(
-        <div className="ArticlePreview" ></div>
+        <div className="ArticlePreview" >
+            {props.children}
+        </div>
     )
 }
 
