@@ -10,9 +10,10 @@
 
 .footerMobileActive {
     background-color: #48556A; 
+    padding-bottom: 8px; 
 }
 .footerMobileStatic{
-    padding: 0 35px 30px 35px; 
+    padding: 0 35px 10px 35px; 
 }
 .footerDesktopActive{
     padding-bottom: 40px; 
