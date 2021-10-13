@@ -17,7 +17,7 @@ class Footer extends React.Component{
         super(props); 
         this.state = {
             renderedFooter: "",
-            className: "Footer footerMobileActive",
+            className: "Footer footerMobileStatic",
             windowWidth: window.innerWidth,
         }
     }
@@ -64,9 +64,13 @@ class Footer extends React.Component{
 
 
         let mobileFooterActive = 
-            <div className="mainFooterContainer mainFooterContainerActive">
+            <div className="footerMainContainer footerMainContainerActive">
                 <ShareBox   className="ShareBoxMobile" 
                             shareWord={"SHARE"} />
+
+                <ShareBtn   ContainerClassName={"shareBtnContainer shareBtnContainerActive"}
+                            shareBtnClassName={"shareBtn shareBtnActive"}
+                            src={shareBtnActive}/>
             </div>
 
 
@@ -93,7 +97,7 @@ class Footer extends React.Component{
 
         return(
             <section id="Footer" className={this.state.className} >
-                {mobileFooterActive}
+                {mobileFooterStatic}
             </section>
         )
     }

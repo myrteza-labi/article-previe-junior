@@ -6,11 +6,17 @@
     justify-content: center; 
     align-items: center; 
 }
-
+.shareBtn{
+    width: 14px; 
+    height: 12px; 
+}
+/*  static style  */
 .shareBtnContainerStatic{
     background-color: #ECF2F8; 
 }
 
-.shareBtnStatic{
-    background-color: #ECF2F8; 
+.shareBtnContainerActive{
+    background-color: #6E8098; 
 }
+
+/*  active style  */
