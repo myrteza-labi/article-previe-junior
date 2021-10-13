@@ -1,0 +1,4 @@
+.TextPresentation {
+    display: flex; 
+    flex-direction: column; 
+}

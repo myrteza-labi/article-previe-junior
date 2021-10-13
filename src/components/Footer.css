@@ -1,3 +1,8 @@
+.Footer {
+    display: flex; 
+    flex-direction: row; 
+}
+
 .shareIcon {
     background-image: url("../images/icon-share.svg"); 
     width: 32px; 
@@ -5,6 +10,11 @@
     background-size: contain; 
     background-repeat: no-repeat; 
 }
-.active {
+.active {    
     background-color: #48556A; 
+}
+
+.mainFooterContainer {
+    display: flex; 
+    flex-direction: column; 
 }
