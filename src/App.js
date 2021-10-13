@@ -17,6 +17,7 @@ function App() {
       <ArticlePreview>
         <Banner/>
 
+        <div className="textAndFooterContainer">
         <TextPresentation/>
 
         <Footer 
@@ -30,6 +31,8 @@ function App() {
                 <Icon src={pinterestIcon} alt={""}/>
               </IconContainer>
           }/>
+        </div>
+        
         
 
       </ArticlePreview>

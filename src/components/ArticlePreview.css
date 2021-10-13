@@ -8,3 +8,14 @@
     overflow: hidden; 
     background-color: #FFF; 
 }
+
+/* desktop */
+@media screen and (min-width: 1440px){
+    .ArticlePreview{
+        justify-content: flex-start; 
+        position: relative; 
+        width: 730px; 
+        height: 280px; 
+        flex-direction: row; 
+    }
+}
