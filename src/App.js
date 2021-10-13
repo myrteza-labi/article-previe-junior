@@ -1,4 +1,4 @@
-import './App.css';
+import './App.css'; 
 import ArticlePreview from './components/ArticlePreview'; 
 import Banner from './components/Banner'; 
 import Footer from './components/Footer'; 
@@ -16,19 +16,21 @@ function App() {
     <div className="App">
       <ArticlePreview>
         <Banner/>
+
         <TextPresentation/>
 
         <Footer 
-        profilePictureSrc={profilepicture} 
-        name={"Michelle Appleton"} 
-        date={"28 juin 2020"}
-        icon={
-            <IconContainer>
-              <Icon src={facebookIcon} alt={""}/>
-              <Icon src={twitterIcon} alt={""}/>
-              <Icon src={pinterestIcon} alt={""}/>
-            </IconContainer>
-        }/>
+          profilePictureSrc={profilepicture} 
+          name={"Michelle Appleton"} 
+          date={"28 juin 2020"}
+          icon={
+              <IconContainer>
+                <Icon src={facebookIcon} alt={""}/>
+                <Icon src={twitterIcon} alt={""}/>
+                <Icon src={pinterestIcon} alt={""}/>
+              </IconContainer>
+          }/>
+        
 
       </ArticlePreview>
     </div>
