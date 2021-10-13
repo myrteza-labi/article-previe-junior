@@ -1,78 +1,25 @@
+.footerMainContainer {
+    display: flex; 
+    flex-direction: row; 
+    min-width: 100%; 
+}
+.footerMainContainerStatic {
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+
+
 .Footer {
     width: 100%; 
     height: 64px; 
     margin-top: 20px; 
-}
-.Footer:not(.active) {
-    margin-bottom: 20px; 
-}
-
-
-.mainFooterContainer {
     display: flex; 
     flex-direction: row; 
     align-items: center; 
-    justify-content: space-between; 
-    padding: 20px 35px 20px 35px; 
-    width: 100%; 
-    height: 100%; 
 }
 
-/*  Active Footer  */
-
-.shareIcon {
-    width: 14px; 
-    height: 12px; 
-}
-.shareContainer {
-    width: 32px; 
-    height: 32px; 
-    border-radius: 30px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-}
-
-.shareContaineractive{
-    background-color: #6E8098; 
-}
-.shareContainerStatic{
-    background-color: #ECF2F8; 
-}
-.active {    
+.footerMobileActive {
     background-color: #48556A; 
 }
 
-.shareWord {
-    font-size: 13px; 
-    font-weight: 300; 
-    line-height: 20px; 
-    letter-spacing: 5px; 
-    color: #9DAEC2; 
-}
-
-/*  Static Footer  */
-
-.profilePicture {
-    width: 40px; 
-    height: 40px; 
-    border-radius: 30px; 
-}
-
-.name {
-    font-size: 13px; 
-    font-weight: 900; 
-    line-height: 20px; 
-    letter-spacing: 0.12px; 
-    color: #48556A; 
-}
-.date {
-    font-size: 13px; 
-    font-weight: 200; 
-    line-height: 20px; 
-    letter-spacing: 0.12px; 
-    color: #9DAEC2; 
-}
-
-.mainFooterContainerStatic {
-}

@@ -1,0 +1,16 @@
+.ShareBox{
+    display: flex; 
+    flex-direction: row; 
+}
+.ShareBoxMobile {
+    margin-left: 20px; 
+    width: 175px; 
+    justify-content: space-between; 
+}
+.shareWord {
+    font-size: 13px; 
+    font-weight: 300; 
+    line-height: 20px; 
+    letter-spacing: 5px; 
+    color: #9DAEC2; 
+}

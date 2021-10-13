@@ -5,3 +5,17 @@
     justify-content: center; 
     align-items: center; 
 }
+.textAndFooterContainer{
+    width: 100%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
+
+/* desktop */
+@media screen and (min-width: 1440px){
+    .textAndFooterContainer{
+        width: 100%; 
+    }
+}

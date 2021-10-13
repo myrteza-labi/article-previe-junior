@@ -1,0 +1,16 @@
+.shareBtnContainer {
+    width: 32px; 
+    height: 32px; 
+    border-radius: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.shareBtnContainerStatic{
+    background-color: #ECF2F8; 
+}
+
+.shareBtnStatic{
+    background-color: #ECF2F8; 
+}

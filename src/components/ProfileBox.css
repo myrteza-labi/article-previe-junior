@@ -1,0 +1,22 @@
+.ProfileBox {
+    display: flex; 
+    flex-direction: row; 
+}
+.profileInfoContainer {
+    margin-left: 20px; 
+}
+
+.name {
+    font-size: 13px; 
+    font-weight: 900; 
+    line-height: 20px; 
+    letter-spacing: 0.12px; 
+    color: #48556A; 
+}
+.date {
+    font-size: 13px; 
+    font-weight: 200; 
+    line-height: 20px; 
+    letter-spacing: 0.12px; 
+    color: #9DAEC2; 
+}
