@@ -22,28 +22,44 @@ import profilepicture from '../images/avatar-michelle.jpg';
                 isDesktop : (window.innerWidth >= 1440 ? true: false) ,
             }
             this.handleClick = this.handleClick.bind(this)
-            this.isStatic = this.isStatic.bind(this); 
             this.displayDesktopFooterActive = this.displayDesktopFooterActive.bind(this); 
             this.displayFooterStatic = this.displayFooterStatic.bind(this); 
             this.displayMobileFooterActiv = this.displayMobileFooterActiv.bind(this); 
             this.limitFunc = this.limitFunc.bind(this); 
+            this.allStatic = this.allStatic.bind(this); 
 
 
     }
+    allStatic(){
+        this.displayFooterStatic();
+    }
     
     limitFunc(){
-        let isStatic = this.state.isStatic;
+        let isStatic = this.state.isStatic; 
+        /*let isStatic = this.state.isStatic;
         let isDesktop = this.state.isDesktop; 
-        let className= this.state.className; 
+        let className= this.state.className; */
         if(window.innerWidth >= 1440){
             this.setState({
                 isDesktop : true,
             })
+            if(isStatic){
+                this.displayFooterStatic(); 
+            }
+            else if(!isStatic){
+                this.displayFooterStatic(); 
+            }
         }
-        else{
+        else {
             this.setState({
                 isDesktop : false,
             })
+            if(isStatic){
+                this.displayFooterStatic(); 
+            }
+            else if (!isStatic){
+                this.displayMobileFooterActiv(); 
+            }
         }
     }
 /*
@@ -69,11 +85,7 @@ import profilepicture from '../images/avatar-michelle.jpg';
     */
 
 
-    isStatic(){
-        if(this.state.isStatic === true){
-            return true
-        }
-    }
+
 
     displayFooterStatic(){
         this.setState({
@@ -166,8 +178,7 @@ import profilepicture from '../images/avatar-michelle.jpg';
 
     render(){
         
-        window.addEventListener("resize", this.limitFunc);
-        window.addEventListener("onload", this.limitFunc);
+        window.addEventListener("resize" ,this.limitFunc);
         
             
 
